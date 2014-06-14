@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/jquery-mobile.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"/>
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" />
+        <script src="js/funcoes.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-mobile.js"></script>
+
+    </head>
+    <body>
+
+        <div data-role="page" data-theme='b' id="login">
+            <div data-role="content">
+                <div style="text-align: center; margin: 10px 0 10px 0;">
+                    <img src="res/icon.png" width="128" />
+                    <h1>Diário de bordo</h1>
+                </div>
+                <form>
+                    <ul data-role="listview" data-inset="true">
+                        <li data-role="fieldcontain">
+                            <label for="inputEmail">E-mail:</label>
+                            <input type="email" tabindex="1" name="inputEmail" id="inputEmail" value="" data-clear-btn="true" placeholder="">
+                        </li>
+                        
+                        <li data-role="fieldcontain">
+                            <label for="inputEmail" >Senha:</label>
+                            <input type="password" tabindex="2" name="inputSenha" id="inputSenha" value="" data-clear-btn="true" placeholder="">
+                        </li>
+                        
+                        <li style="text-align: center;">
+                            <button onclick="teste()" type="button" data-inline='true' tabindex="3"><i class='lIcon fa fa-sign-in'></i>Entrar</button>
+                            <button onclick="teste()" type="button" data-inline='true' tabindex="4"><i class='lIcon fa fa-star'></i>Cadastrar</button>
+                        </li>
+                        
+                    </ul>
+                    
+                </form>
+            </div>
+            
+        </div>
+        
+        <div data-role="page" data-theme='b' id="inicio">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+                <h1>
+                    <img src="res/icon.png" class="ui-btn-icon-left ui-btn-icon-notext " />Diário de Bordo
+                </h1>
+            </div>
+            
+            
+            <div data-role="content">
+                <ul data-nativedroid-plugin='cards'>
+                    <li data-cards-type='text'>
+                        <h1>Default Card</h1>
+                        <h2>Subtitle of a default card</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+                    </li>
+                    <li data-cards-type='text'>
+                        <h1>Default Card</h1>
+                        <h2>Subtitle of a default card</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+                    </li>
+                    <li data-cards-type='text'>
+                        <h1>Default Card</h1>
+                        <h2>Subtitle of a default card</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'>
+                    <div data-role="navbar">
+                            <ul>
+                                    <li><a href="#inicio" class="ui-btn-active ui-state-persist"><i class='blIcon fa fa-home'></i>Início</a></li>
+                                    <li><a href="#meu"><i class='blIcon fa fa-user'></i>Meu</a></li>
+                                    <li><a href="#salas"><i class='blIcon fa fa-group'></i>Salas</a></li>
+                                    <li><a href="#config"><i class='blIcon fa fa-cogs'></i>Config</a></li>
+                            </ul>
+                    </div>
+            </div>
+
+
+        </div>
+
+
+        <div data-role="page" id="meu">    
+                    
+                
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+                <h1>Meu</h1>
+            </div>
+            
+            <div data-role="content">
+            Conteudo aqui
+            </div>
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'>
+                    <div data-role="navbar">
+                            <ul>
+                                    <li><a href="#inicio" ><i class='blIcon fa fa-home'></i>Início</a></li>
+                                    <li><a href="#meu" class="ui-btn-active ui-state-persist" ><i class='blIcon fa fa-user'></i>Meu</a></li>
+                                    <li><a href="#salas"><i class='blIcon fa fa-group'></i>Salas</a></li>
+                                    <li><a href="#config"><i class='blIcon fa fa-cogs'></i>Config</a></li>
+                            </ul>
+                    </div>
+            </div>
+            
+        </div>
+        
+        <div data-role="page" id="salas">    
+                    
+                
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+                <h1>Salas</h1>
+            </div>
+            
+            <div data-role="content">
+            Conteudo aqui
+            </div>
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'>
+                    <div data-role="navbar">
+                            <ul>
+                                    <li><a href="#inicio" ><i class='blIcon fa fa-home'></i>Início</a></li>
+                                    <li><a href="#meu"  ><i class='blIcon fa fa-user'></i>Meu</a></li>
+                                    <li><a href="#salas" class="ui-btn-active ui-state-persist"><i class='blIcon fa fa-group'></i>Salas</a></li>
+                                    <li><a href="#config"><i class='blIcon fa fa-cogs'></i>Config</a></li>
+                            </ul>
+                    </div>
+            </div>
+            
+        </div>
+        
+        <div data-role="page" id="config">    
+                    
+                
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+                <h1>Configurações</h1>
+            </div>
+            
+            <div data-role="content">
+            Conteudo aqui
+            </div>
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'>
+                    <div data-role="navbar">
+                            <ul>
+                                    <li><a href="#inicio" ><i class='blIcon fa fa-home'></i>Início</a></li>
+                                    <li><a href="#meu"  ><i class='blIcon fa fa-user'></i>Meu</a></li>
+                                    <li><a href="#salas" ><i class='blIcon fa fa-group'></i>Salas</a></li>
+                                    <li><a href="#config" class="ui-btn-active ui-state-persist"><i class='blIcon fa fa-cogs'></i>Config</a></li>
+                            </ul>
+                    </div>
+            </div>
+            
+        </div>
+
+
+
+
+    <script src="js/nativedroid.script.js"></script>
+    
+    </body>
+</html>
