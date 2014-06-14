@@ -13,6 +13,15 @@
         <script src="js/funcoes.js"></script>
         <script src="js/jquery.js"></script>
         <script src="js/jquery-mobile.js"></script>
+        <script>
+            $(document).bind("mobileinit", function(){
+                $.extend(  $.mobile , {
+                 defaultPageTransition: 'none'
+                });
+              });
+            
+        </script>
+        
 
     </head>
     <body>
