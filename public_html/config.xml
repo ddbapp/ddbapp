@@ -8,6 +8,19 @@
 
     <name>Diário de Bordo</name>
     
+     <platform name="android">
+              <icon src="res/android/ldpi.png" density="ldpi" />
+              <icon src="res/android/mdpi.png" density="mdpi" />
+              <icon src="res/android/hdpi.png" density="hdpi" />
+              <icon src="res/android/xhdpi.png" density="xhdpi" />
+     </platform>
+     <platform name="wp8">
+              <icon src="res/wp/ApplicationIcon.png" width="99" height="99" />
+              <!-- tile image -->
+              <icon src="res/wp/Background.png" width="159" height="159" />
+     </platform>
+
+
 
     <description>
         Aplicativo para comunicação fácil entre alunos e professores.
